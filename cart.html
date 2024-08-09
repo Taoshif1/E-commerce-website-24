@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+
+    <!--Font Awesone CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--NAV starts here-->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-arround">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img src="/image/tao23.jpg" class="profile-icon" alt="Profile image">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav-lower flex-space-arround">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brand">
+                    Taoshif Express</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping">
+                            Cart 2 products - $112.50</i>     
+                    </span>
+                  
+                </a>
+            </li>
+        </ul>    
+    </nav>
+    <!--NAV ends here-->
+
+    <main>
+        <div class="cart flex-center">
+            <div class="cart__items">
+                <div class="cart__items-heading card">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="cart__items-action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">
+                            Select all items
+                        </label>
+                        <button class="btn"> <i class="fas fa-trash"></i> </button>
+                        <button class="btn">SHOP MORE</button>
+                    </div>
+                </div>
+
+                <div class="cart__item card flex-space-arround">
+                    <input type="checkbox">
+                    <img class="cart__item-img" src="./image/jacket1.jpg" alt="product1">
+                    <div class="cart__item-desc">
+                        <h3 class="product__name">Leather Jacket</h3>
+                        <h4 class="product__price">Price: $175.99</h4>
+                        <p class="cart__item-shipping">Free Shipping</p>
+                    </div>
+                    <div class="cart__item-actions">
+                        <button class="btn"> <i class="fas fa-trash"></i> </button>
+                        <div>
+                            <button class="btn"> <i class="fas fa-add"></i> </button>
+                            <span>1</span>
+                            <button class="btn"> <i class="fas fa-minus"></i> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart__item card flex-space-arround">
+                    <input type="checkbox">
+                    <img class="cart__item-img" src="./image/ls2.jpg" alt="product9">
+                    <div class="cart__item-desc">
+                        <h3 class="product__name">Lip Stick</h3>
+                        <h4 class="product__price">Price: $5.99</h4>
+                        <p class="cart__item-shipping">Shipping Cost: $2.50</p>
+                    </div>
+                    <div class="cart__item-actions">
+                        <button class="btn"> <i class="fas fa-trash"></i> </button>
+                        <div>
+                            <button class="btn"> <i class="fas fa-add"></i> </button>
+                            <span>2</span>
+                            <button class="btn"> <i class="fas fa-minus"></i> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acrt__item card flex-space-arround">item2</div>
+            </div>
+            <div class="cart__payment">
+               <div class="cart__payment-summary card">
+                <h2>Payment Summary</h2>
+                <div>
+                    <p>Subtotal:</p>
+                    <p>$182.00</p>
+                </div>
+                <div>
+                    <p>Shipping Cost:</p>
+                    <p>$2.50</p>
+                </div>
+                <div>
+                    <p>Total Cost:</p>
+                    <p>$184.50</p>
+                </div>
+                <button class="btn cart__payment-btn">Pay Now</button>
+               </div> 
+                <div class="cart__payment-methods cards">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-3x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-amex fa-3x"></i>
+                        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer flex-space-arround">
+        <div class="flex-space-arround">
+            <label for="subscribe">Subscribe to Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" 
+             class="footer__input" placeholder="Your Email Address">
+            <button class="btn" btn-subscribe>subscribe</button>
+        </div>
+        <div>
+            <p>
+                &copy; Copyright 2024 Taoshif Express. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

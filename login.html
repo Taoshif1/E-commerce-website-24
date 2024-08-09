@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+
+    <!--Font Awesone CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--NAV starts here-->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-arround">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img src="/image/tao23.jpg" class="profile-icon" alt="Profile image">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav-lower flex-space-arround">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brand">
+                    Taoshif Express</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping">
+                            Cart 2 products - $112.50</i>     
+                    </span>
+                  
+                </a>
+            </li>
+        </ul>    
+    </nav>
+    <!--NAV ends here-->
+
+    <main>
+        <section class="login">
+            <h2 class="section-title text-center">User Login</h2>
+            <div class="card">
+                <form class="form">
+                    
+                  <div class="form-control flex-center">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required autocomplete="email">
+                  </div>  
+                  <div class="form-control flex-center">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required autocomplete="password">
+                  </div> 
+                
+                  <div class="form-control flex-center form-btn-field">
+                    <button type="submit" class="btn contact-btn">Submit</button>
+                  </div> 
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer flex-space-arround">
+        <div class="flex-space-arround">
+            <label for="subscribe">Subscribe to Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" 
+             class="footer__input" placeholder="Your Email Address">
+            <button class="btn" btn-subscribe>subscribe</button>
+        </div>
+        <div>
+            <p>
+                &copy; Copyright 2024 Taoshif Express. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
